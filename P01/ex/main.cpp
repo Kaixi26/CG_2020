@@ -60,13 +60,13 @@ void renderScene(void) {
 
 
 // put drawing instructions here
-	glRotatef(tmp_rot*45,0,1,0);
-	//glRotatef(cos(tmp_rot)*45,1,0,0);
-	//glRotatef(sin(tmp_rot)*45,0,1,0);
-	//glRotatef((cos(tmp_rot)+sin(tmp_rot))*45,0,0,1);
+	//glRotatef(tmp_rot*45,0,1,0);
+	glRotatef(cos(tmp_rot)*45,1,0,0);
+	glRotatef(sin(tmp_rot)*45,0,1,0);
+	glRotatef((cos(tmp_rot)+sin(tmp_rot))*45,0,0,1);
 	glutWireTeapot(abs(sin(tmp))+0.5);
-	tmp+=0.01;
-	tmp_rot+=1;
+	tmp+=0.005;
+	tmp_rot+=0.005;
 
 
 
