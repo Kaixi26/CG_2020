@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kaixi/git/CG_2020/catmull/catmull.h
+vector
+/home/kaixi/git/CG_2020/catmull/vector
+vertex.h
+/home/kaixi/git/CG_2020/catmull/vertex.h
+
+/home/kaixi/git/CG_2020/catmull/main.cpp
+GLUT/glut.h
+-
+GL/glut.h
+-
+math.h
+-
+stdio.h
+-
+stdlib.h
+-
+limits.h
+-
+array
+-
+vector
+-
+vertex.h
+/home/kaixi/git/CG_2020/catmull/vertex.h
+catmull.h
+/home/kaixi/git/CG_2020/catmull/catmull.h
+
+/home/kaixi/git/CG_2020/catmull/vertex.h
+tuple
+-
+vector
+-
+

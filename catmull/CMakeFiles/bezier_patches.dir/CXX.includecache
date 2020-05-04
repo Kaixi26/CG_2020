@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kaixi/git/CG_2020/catmull/vertex.cpp
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+math.h
+-
+vertex.h
+/home/kaixi/git/CG_2020/catmull/vertex.h
+
+/home/kaixi/git/CG_2020/catmull/vertex.h
+tuple
+-
+vector
+-
+

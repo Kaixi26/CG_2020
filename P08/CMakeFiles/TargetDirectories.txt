@@ -1,0 +1,3 @@
+/home/kaixi/git/CG_2020/P08/CMakeFiles/rebuild_cache.dir
+/home/kaixi/git/CG_2020/P08/CMakeFiles/class8.dir
+/home/kaixi/git/CG_2020/P08/CMakeFiles/edit_cache.dir

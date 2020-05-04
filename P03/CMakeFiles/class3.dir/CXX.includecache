@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kaixi/git/CG_2020/P03/main.cpp
+GLUT/glut.h
+-
+GL/glut.h
+-
+math.h
+-
+stdio.h
+-
+stdlib.h
+-
+limits.h
+-
+

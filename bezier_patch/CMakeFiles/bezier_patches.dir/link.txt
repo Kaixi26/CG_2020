@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/bezier_patches.dir/main.cpp.o CMakeFiles/bezier_patches.dir/point.cpp.o CMakeFiles/bezier_patches.dir/controlpoints.cpp.o CMakeFiles/bezier_patches.dir/benzierpatch.cpp.o  -o bezier_patches  /usr/lib/libGL.so /usr/lib/libGLU.so /usr/lib/libglut.so /usr/lib/libXmu.so /usr/lib/libXi.so 

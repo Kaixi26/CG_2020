@@ -111,6 +111,8 @@ void drawCone(const float radius, const float height, const int slices, const in
 				((height - j*vertical_diff)*radius) / height;
 			float upper_rad =
 				((height - (j+1)*vertical_diff)*radius) / height;
+
+			if(j != (stacks-1)){
 			glVertex3f(sin(alpha_diff*i)*curr_rad,
 					   j*vertical_diff,
 					   cos(alpha_diff*i)*curr_rad);
@@ -120,8 +122,8 @@ void drawCone(const float radius, const float height, const int slices, const in
 			glVertex3f(sin(alpha_diff*i)*upper_rad,
 					   (j+1)*vertical_diff,
 					   cos(alpha_diff*i)*upper_rad);
+			}
 
-			if(i == (slices-1) && j == (stacks-1)) continue;
 			glColor3f((float)rand()/INT_MAX,
 					  (float)rand()/INT_MAX,
 					  (float)rand()/INT_MAX);
@@ -297,11 +299,11 @@ void renderScene(void) {
 			  0.0f,1.0f,0.0f);
 
 	drawAxis();
-	drawCylinder(radius,height,slices);
-	glColor3f(1.0f, 1.0f, 1.0f);
+	//drawCylinder(radius,height,slices);
+	//glColor3f(1.0f, 1.0f, 1.0f);
 	//glutWireSphere(radius, slices, stacks);
 	//glutWireCone(radius, height, slices, stacks);
-	//drawCone(radius, height, slices, stacks);
+	drawCone(radius, height, slices, stacks);
 	//drawSphere(radius, slices, stacks);
 	//drawBox(2,0.5,1,slices);
 	//    End of frame

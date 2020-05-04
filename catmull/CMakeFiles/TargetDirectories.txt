@@ -1,0 +1,3 @@
+/home/kaixi/git/CG_2020/catmull/CMakeFiles/rebuild_cache.dir
+/home/kaixi/git/CG_2020/catmull/CMakeFiles/catmull.dir
+/home/kaixi/git/CG_2020/catmull/CMakeFiles/edit_cache.dir

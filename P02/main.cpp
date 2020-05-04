@@ -5,7 +5,6 @@
 #endif
 
 #include <math.h>
-#include <stdio.h>
 
 void changeSize(int w, int h) {
 
@@ -77,59 +76,6 @@ void draw_axis(){
 	glEnd();
 }
 
-float angle = 0;
-float angle_inc = 16;
-float pyramid_x = 0;
-float pyramid_y = 0;
-float pyramid_z = 0;
-float pyramid_scl = 1;
-float axis_inc = 0.1;
-float vel = 0;
-float acc = -0.01;
-
-float calc_y(){
-	vel+=acc;
-	vel*=0.99;
-	pyramid_y+=vel;
-	if(pyramid_y <= 0) pyramid_y = 0;
-	return pyramid_y;
-}
-
-void keyboard_handler(unsigned char key, int x, int y){
-	switch(key){
-		case 'd':
-			angle += angle_inc;
-			break;
-		case 's':
-			angle -= angle_inc;
-			break;
-		case 'h':
-			pyramid_x -= axis_inc;
-			break;
-		case 'l':
-			pyramid_x += axis_inc;
-			break;
-		case 'j':
-			pyramid_z -= axis_inc;
-			break;
-		case 'k':
-			pyramid_z += axis_inc;
-			break;
-		case 'a':
-			pyramid_scl -= axis_inc;
-			break;
-		case 'f':
-			pyramid_scl += axis_inc;
-			break;
-		case 'b':
-			vel = 0.25;
-			break;
-	}
-	angle = fmod(angle, 360);
-	printf("%f\n", angle);
-	glutPostRedisplay();
-}
-
 void renderScene(void) {
 
 	// clear buffers
@@ -148,9 +94,7 @@ void renderScene(void) {
 
 // put drawing instructions here
 	draw_axis();
-	glTranslatef(pyramid_x, calc_y(), pyramid_z);
-	glScalef(1, pyramid_scl, 1);
-	glRotatef(angle, 0, 1, 0);
+	glRotatef(45, 0, 1, 0);
 	draw_pyramid();
 
 	// End of frame
@@ -177,13 +121,10 @@ int main(int argc, char **argv) {
 		
 // Required callback registry 
 	glutDisplayFunc(renderScene);
-	glutIdleFunc(renderScene);
 	glutReshapeFunc(changeSize);
-	glutKeyboardFunc(keyboard_handler);
 
 	
 // put here the registration of the keyboard callbacks
-
 
 
 

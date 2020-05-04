@@ -1,0 +1,3 @@
+/home/kaixi/git/CG_2020/P07/CMakeFiles/rebuild_cache.dir
+/home/kaixi/git/CG_2020/P07/CMakeFiles/class7.dir
+/home/kaixi/git/CG_2020/P07/CMakeFiles/edit_cache.dir
